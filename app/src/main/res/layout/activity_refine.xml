@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/toolbar_id_refine"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/primaryBlue"
+        >
+        <ImageView
+            android:id="@+id/back_button_refine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/custom_back_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+
+            android:text="Refine"/>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_in_refine">
+        <TextView
+            android:textSize="18dp"
+            android:textColor="@color/primaryBlue"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Your Availibilty"/>
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:id="@+id/dropdown_refine"
+            android:background="@drawable/spinner_border"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+            android:spinnerMode="dropdown">
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/add_your_status"
+            android:textColor="@color/primaryBlue"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/edit_text_refine"
+            android:background="@drawable/spinner_border"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="15dp"
+            android:maxLength="250"
+            android:text="Hi! Community! I am Open to new Connections '😊'"/>
+        <TextView
+            android:id="@+id/wordCounter"
+            android:paddingLeft="300dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="47/250"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Select Hyper Local Distance"
+            android:textColor="@color/primaryBlue"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.slider.Slider
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:valueTo="100"
+            android:elevation="10dp"
+            android:value="50"
+            android:backgroundTint="@color/primaryBlue"
+            android:valueFrom="0"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1Km"/>
+            <TextView
+                android:layout_marginLeft="270dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100km"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Select Purpose"
+            android:textColor="@color/primaryBlue"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/b1"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="Coffee"
+                android:textSize="15sp"
+                tools:ignore="SmallSp" />
+
+            <Button
+                android:id="@+id/b2"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:text="Business"
+                android:textSize="15sp"
+                tools:ignore="SmallSp" />
+
+            <Button
+                android:layout_marginLeft="5dp"
+                android:id="@+id/b3"
+                android:text="Hobbies"
+                android:padding="0dp"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                tools:ignore="SmallSp" />
+
+            <Button
+                android:layout_marginLeft="5dp"
+                android:id="@+id/b4"
+                android:text="Friendship"
+                android:padding="0dp"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/b5"
+
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="Movies"
+                android:textSize="15sp"
+                tools:ignore="SmallSp" />
+
+            <Button
+                android:id="@+id/b6"
+                android:layout_marginLeft="5dp"
+                android:text="Dinning"
+                android:padding="0dp"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                tools:ignore="SmallSp" />
+
+            <Button
+                android:id="@+id/b7"
+                android:layout_marginLeft="5dp"
+                android:text="Dating"
+                android:padding="0dp"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                tools:ignore="SmallSp" />
+
+            <Button
+                android:id="@+id/b8"
+                android:text="Matrimony"
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="SAVE &amp; CONTINUE"/>
+    </LinearLayout>
+
+</LinearLayout>

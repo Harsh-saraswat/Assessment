@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Personal"
+        app:showAsAction="ifRoom"
+        android:title="Personal"/>
+    <item
+        android:id="@+id/Business"
+        app:showAsAction="ifRoom"
+        android:title="Business"/>
+    <item
+        android:id="@+id/Merchant"
+        app:showAsAction="ifRoom"
+        android:title="Merchant"/>
+</menu>

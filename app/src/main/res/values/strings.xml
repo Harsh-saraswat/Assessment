@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Assessment_Harsh</string>
+    <string name="add_your_status">Add Your Status</string>
+    <string-array name="dropItems">
+        <item >Available | Hey Let Us Connect</item>
+        <item>Away | Stay Discrete And Watch</item>
+        <item>Busy | Do Not Disturb | Will Catch Up Later</item>
+        <item>SOS | Emergency! Need Assistance! HELP</item>
+    </string-array>
+</resources>
